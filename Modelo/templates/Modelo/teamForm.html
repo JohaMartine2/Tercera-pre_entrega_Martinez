@@ -1,0 +1,17 @@
+{% extends "Modelo/index.html" %}
+
+{% block title %}
+<h1 class="display-5 fw-bolder text-white mb-2">Formulario Team</h1>
+{% endblock title %}
+
+
+{% block content_project %}
+<form action="/TeamForm/" method = "POST">
+    {% csrf_token %}
+    <table>
+        {{ form }}
+    </table> 
+    <input type = "submit" value="Submit">
+</form>
+
+{% endblock content_project %}  

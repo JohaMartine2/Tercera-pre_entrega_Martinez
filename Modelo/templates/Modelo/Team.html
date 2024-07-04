@@ -1,0 +1,35 @@
+{% extends "Modelo/index.html" %}
+
+{% block title %}
+<h1 class="display-5 fw-bolder text-white mb-2">Team</h1>
+{% endblock title %}
+
+
+{% block content_project %}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>full_name</th>
+            <th>email</th>
+            <th>phone</th>
+            <th>department</th>
+            <th>bio</th>
+
+        <tr>  
+    <thead>
+    <tbody>
+    {% for i in Team %}
+        <tr> 
+            <td>{{ i.id }}</td>
+            <td>{{ i.full_name }}</td>
+            <td>{{ i.email }}</td>
+            <td>{{ i.phone }}</td>
+            <td>{{ i.department }}</td>
+            <td>{{ i.bio }}</td>
+    {% endfor %}
+    <tbody>
+</table>
+
+{% endblock content_project %}  

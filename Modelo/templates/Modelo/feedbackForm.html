@@ -1,0 +1,39 @@
+{% extends "Modelo/index.html" %}
+
+{% block title %}
+<h1 class="display-5 fw-bolder text-white mb-2">Get in touch </h1>
+{% endblock title %}
+
+
+{% block content_project %}
+
+<!-- Contact section-->
+<section class="bg-light py-5">
+    <div class="container px-5 my-5 px-5">
+        <div class="text-center mb-5">
+            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+            <h2 class="fw-bolder">Get in touch</h2>
+            <p class="lead mb-0">We'd love to hear from you</p>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-6">
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form action = "/FeedbackForm/" method="post" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    {% csrf_token %}
+                    {{ form.as_p}}
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock content_project %}  
