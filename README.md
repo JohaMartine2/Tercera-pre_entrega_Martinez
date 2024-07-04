@@ -13,19 +13,24 @@ Our Impact Plan
 Focus on measurable results, helping businesses reduce their carbon footprint, improve resource efficiency, and comply with regulatory standards. Emphasis on continuous improvement and adaptation to ensure long-term sustainability and resilience.
 
 Functionalities
+
 HTML Inheritance
 All templates inherit from index.html.
 
 Models
+
 Three models have been defined in models.py: Industries, Services, Team.
 
 Data Insertion Forms
+
 Forms have been created to insert data into all the classes in models.py.
 
 Search Form
+
 A form has been implemented to search for data in the database.
 
 Project Structure
+
 index.html: Base template for HTML inheritance.
 team.html: Template for the team form.
 models.py: Definition of the models Industries, Services, Team.
@@ -33,6 +38,7 @@ forms.py: Definition of the forms TeamForm, FeedbackForm.
 views.py: Views to handle the forms and the search.
 
 Instructions to Test the Project
+
 1. Clone the repository.
 2. Install the dependencies.
 3. Run the migrations with python manage.py makemigrations and python manage.py migrate.
